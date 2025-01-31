@@ -8,18 +8,17 @@ public class P8{
         char Con;
         
         do{
-        System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\nEnter your choice:");
-        int choice=sc.nextInt();
-        System.out.println("Enter a & b: ");
-        int a= sc.nextInt();
-        int b= sc.nextInt();
-        calculator();
-        System.out.println("Want to continue?(Y or N):");
-        Con= sc.next().charAt(0);  
-        } 
-        while(Character.toUpperCase(Con)=='Y'); 
+            System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\nEnter your choice:");
+            int choice=sc.nextInt();
+            System.out.println("Enter a & b: ");
+            int a= sc.nextInt();
+            int b= sc.nextInt();
+            calculator(choice, a, b);       // passed the values 
+            System.out.println("Want to continue?(Y or N):");
+            Con= sc.next().charAt(0);  
+        } while(Character.toUpperCase(Con)=='Y'); 
 }
-    static void calculator(){
+    static void calculator(int choice, int a, int b){ // added parameters
 
         switch(choice){
             case 1:

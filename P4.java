@@ -24,10 +24,10 @@ public class P4 {
     }
 
     public static void main(String[] args) {
-        System.out.println(ternary_op(10));
-        System.out.println(print_n_num(1));
-        System.out.println(access_array(new int arr[]={1,2,3}));
-        System.out.println(range_of_2values());
+        ternary_op(10);
+        print_n_num(1);
+        access_array(new int[] {1,2,3});
+        range_of_2values();
 
     }
     

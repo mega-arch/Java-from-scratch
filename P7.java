@@ -7,6 +7,7 @@ public class P7 {
         System.out.println();
         Pyramid();
     }
+
     static void Same_num_in_row(){
         int n=5;
         for (int i=1;i<=n;i++){
@@ -15,19 +16,21 @@ public class P7 {
             }
             System.out.println();
 
+        }
     }
-}
+
     static void Five_five_symbol(){
         int n=5;
-        for (int i=5;i<=1;i--){
+        for (int i=5;i>=1;i--){  // changed <= to >=
             for (int j=1;j<=n;j++){
                 System.out.print("*");
             }
             System.out.println();
 
+        }
+            
     }
-        
-}
+
     static void Pyramid(){
         int n=5;
         for (int i=1;i<=n;i++){
@@ -36,7 +39,7 @@ public class P7 {
             }
             System.out.println();
 
+        }
+            
     }
-        
-}
 }
